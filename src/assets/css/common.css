@@ -1,0 +1,33 @@
+.wrap {
+  width: 1200px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 1200px) {
+  .wrap{
+    width: 100%;
+    padding: 0 20px;
+  }
+}
+
+.numerical{
+  font-size: 300px;
+  color: #1c292f;
+  font-family: Hyzongyitij;
+}
+@media screen and (max-width: 768px) {
+  .numerical{
+    font-size: 150px;
+    margin: 0 auto;
+    text-align: center;
+    }
+}
+.title{
+  font-size:32px;
+  color: #fff;
+}
+.swiper-wrapper{
+  transition-timing-function: ease-in-out;
+}
+.colorRed {
+  color: #c90010;
+}

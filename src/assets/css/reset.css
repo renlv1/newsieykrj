@@ -1,0 +1,107 @@
+@charset "utf-8";
+html,
+body {
+    width: 100%;
+}
+html, body, p, h1, h2, h3, h4, h5, h6, ul, ol, dl, dt, dd,div,span,i,audio, video  {
+    margin: 0;
+    padding: 0;
+    border: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+h1, h2, h3, h4, h5, h6{
+font-weight: normal;
+}
+a {
+    text-decoration: none;
+}
+a :hover {
+    text-decoration: none;
+    cursor: pointer;
+}
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+input, button {
+    outline: none;
+    border: none;
+}
+ol, ul ,li{
+  list-style: none;
+}
+/*文字渐变*/
+.text-gradient{
+  background:-webkit-linear-gradient(left, #c90010 , #eb611d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+/* 标题线渐变*/
+.bg-gradient{
+  background: -webkit-linear-gradient(left, #c90010 , #eb611d);
+  background: -o-linear-gradient(right, #c90010, #eb611d);
+  background: -moz-linear-gradient(right, #c90010, #eb611d);
+  background: linear-gradient(to right, #c90010 , #eb611d);
+}
+/* 细线渐变*/
+.line-gradient{
+  background: -webkit-linear-gradient(left, rgba(201,0,16,0) , #c90010);
+  background: -o-linear-gradient(right, rgba(201,0,16,0) , #c90010);
+  background: -moz-linear-gradient(right, rgba(201,0,16,0) , #c90010);
+  background: linear-gradient(to right, rgba(201,0,16,0) , #c90010);
+}
+.num-title{
+  font-size: 300px;
+  color: #1c292f;
+}
+@media screen and (max-width: 900px){
+  .num-title {
+    font-size: 150px;
+  }
+}
+/* 斜体*/
+@font-face {
+  font-family: InclineFont;
+  src: url('../fonts/opensans-italic-webfont.woff');
+}
+/*细体*/
+@font-face {
+  font-family: RegularFont;
+  src: url('../fonts/opensans-regular-webfont.woff');
+}
+/*加粗*/
+@font-face {
+  font-family: BordFont;
+  src: url('../fonts/opensans-semibold-webfont.woff');
+}
+/*数字*/
+@font-face {
+  font-family: Hyzongyitij;
+  src: url('../fonts/hyzongyitij-webfont.woff');
+}
+.inclineFont {
+  font-family: InclineFont;
+}
+.regularFont{
+  font-family: RegularFont;
+}
+/*加粗的*/
+.bordFont{
+  font-family: BordFont;
+}
+/*01 02 标题数字*/
+.hyzongyitij{
+  font-family: Hyzongyitij;
+}
+@keyframes semicircle{
+  from {
+    transform: translate(0, -60%) rotate(360deg);
+    transform-origin: center center
+  }
+  to {
+    transform: translate(0, -60%) rotate(0deg);
+    transform-origin: center center
+  }
+}
